@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium personal portfolio website for a software developer."
+    />
+    <title>Swetha.B | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <div class="loader__ring"></div>
+      <p>Loading portfolio...</p>
+    </div>
+
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="logo">SB</a>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-sun"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="container hero-grid">
+          <div class="hero__content" data-animate>
+            <span class="eyebrow">Engineering Student • Web Developer</span>
+            <h1>
+              Hi, I'm <span>Swetha.B</span>
+            </h1>
+            <div class="typing-wrap">
+              <span class="typing-label">I build</span>
+              <span class="typed-text" id="typedText"></span>
+              <span class="cursor">|</span>
+            </div>
+            <p>
+              Hello! I'm Swetha, a first-year engineering student with a passion
+              for web development, programming, and data science. I enjoy
+              learning new technologies and building projects that solve real-world
+              problems.
+            </p>
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
+              <a id="resumeLink" href="Swetha_B_Resume.pdf" class="btn btn-outline" target="_blank" rel="noreferrer">View Resume</a>
+            </div>
+            <div class="social-row">
+              <a href="https://www.linkedin.com/in/swetha-balaji-018130376/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/swethabalaji092-cpu" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="hero__card glass-card profile-card" data-animate>
+            <div class="profile-frame">
+              <img
+                src="SWETHA PHOTO.jpg"
+                alt="Profile portrait"
+                class="profile-image"
+              />
+            </div>
+            <div class="status-pill">
+              <span class="status-dot"></span>
+              Available for freelance work
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading" data-animate>
+            <span class="eyebrow">About Me</span>
+            <h2>Driven by curiosity, creativity, and a passion for real-world problem solving</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="glass-card about-copy" data-animate>
+              <p>
+                Hello! I'm Swetha, a first-year engineering student with a passion
+                for web development, programming, and data science. I enjoy
+                learning new technologies and building projects that solve real-world
+                problems.
+              </p>
+              <p>
+                I have experience with C, C++, Java, HTML, CSS, JavaScript,
+                Python, SQL, and GitHub, and I'm always looking for opportunities
+                to improve my skills through hands-on projects.
+              </p>
+              <p>
+                My goal is to become a skilled software developer by continuously
+                learning, growing, and creating useful, user-friendly applications.
+              </p>
+            </div>
+
+            <div class="glass-card about-details" data-animate>
+              <div>
+                <h3>Education</h3>
+                <p>Rajalakshmi Institute of Technology, BE CSE, 2nd Year, Chennai</p>
+              </div>
+              <div>
+                <h3>Interests</h3>
+                <p>Web Development, Programming, Data Science, Learning New Technologies</p>
+              </div>
+              <div>
+                <h3>Career Objective</h3>
+                <p>Want to become a software engineer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-heading" data-animate>
+            <span class="eyebrow">Core Skills</span>
+            <h2>Technologies I bring into every project</h2>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card glass-card" data-animate>
+              <div class="skill-title"><span>C</span><span>88%</span></div>
+              <div class="progress-bar"><div class="progress" data-width="88%"></div></div>
+            </div>
+            <div class="skill-card glass-card" data-animate>
+              <div class="skill-title"><span>C++</span><span>85%</span></div>
+              <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+            </div>
+            <div class="skill-card glass-card" data-animate>
+              <div class="skill-title"><span>Python</span><span>86%</span></div>
+              <div class="progress-bar"><div class="progress" data-width="86%"></div></div>
+            </div>
+            <div class="skill-card glass-card" data-animate>
+              <div class="skill-title"><span>Java</span><span>78%</span></div>
+              <div class="progress-bar"><div class="progress" data-width="78%"></div></div>
+            </div>
+            <div class="skill-card glass-card" data-animate>
+              <div class="skill-title"><span>HTML</span><span>92%</span></div>
+              <div class="progress-bar"><div class="progress" data-width="92%"></div></div>
+            </div>
+            <div class="skill-card glass-card" data-animate>
+              <div class="skill-title"><span>CSS</span><span>90%</span></div>
+              <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+            </div>
+            <div class="skill-card glass-card" data-animate>
+              <div class="skill-title"><span>JavaScript</span><span>82%</span></div>
+              <div class="progress-bar"><div class="progress" data-width="82%"></div></div>
+            </div>
+            <div class="skill-card glass-card" data-animate>
+              <div class="skill-title"><span>SQL</span><span>80%</span></div>
+              <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+            </div>
+            <div class="skill-card glass-card" data-animate>
+              <div class="skill-title"><span>GitHub</span><span>84%</span></div>
+              <div class="progress-bar"><div class="progress" data-width="84%"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading" data-animate>
+            <span class="eyebrow">Featured Work</span>
+            <h2>Selected projects that blend design and engineering</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card glass-card" data-animate>
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80" alt="Campus Exchange Hub project" />
+              <div class="project-body">
+                <h3>Campus Exchange Hub</h3>
+                <p>A student marketplace platform that enables college students to buy and sell academic essentials such as books, notes, lab materials, and project kits within their campus.</p>
+                <div class="tag-list">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card glass-card" data-animate>
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Seasonal Sales Analysis project" />
+              <div class="project-body">
+                <h3>Seasonal Sales Analysis</h3>
+                <p>A data analytics project that analyzes historical sales data to identify seasonal trends, customer purchasing patterns, and peak sales periods. Interactive visualizations were created to provide actionable insights, helping businesses improve sales forecasting, inventory management, and strategic decision-making.</p>
+                <div class="tag-list">
+                  <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card glass-card" data-animate>
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80" alt="Identity Verification System project" />
+              <div class="project-body">
+                <h3>Identity Verification System</h3>
+                <p>A secure web application that verifies user identities by validating submitted information and documents. The system enhances security, ensures authenticity, and provides a seamless verification process.</p>
+                <div class="tag-list">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card glass-card" data-animate>
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="RGB Color Generator project" />
+              <div class="project-body">
+                <h3>RGB Color Generator</h3>
+                <p>A web application that generates random RGB colors, displays their RGB values instantly, and allows users to copy the generated color code with a single click.</p>
+                <div class="tag-list">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card glass-card" data-animate>
+              <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80" alt="Random Script Generator project" />
+              <div class="project-body">
+                <h3>Random Script Generator</h3>
+                <p>A simple web application that generates random scripts or text instantly through a clean, responsive, and user-friendly interface.</p>
+                <div class="tag-list">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section-heading" data-animate>
+            <span class="eyebrow">Academic Background</span>
+            <h2>Academic journey and milestones</h2>
+          </div>
+
+          <div class="timeline academic-timeline" data-animate>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card academic-card">
+                <span class="timeline-year">2025 – 2029</span>
+                <h3>Bachelor of Engineering (B.E.)</h3>
+                <p><strong>Department:</strong> Computer Science and Engineering</p>
+                <p><strong>Institution:</strong> Rajalakshimi insitute of technology</p>
+                <p><strong>Status:</strong> Currently Pursuing</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card academic-card">
+                <span class="timeline-year">2025</span>
+                <h3>Higher Secondary (Class XII)</h3>
+                <p><strong>School:</strong> KV OCF</p>
+                <p><strong>Board:</strong> CBSE</p>
+                <p><strong>Year of Completion:</strong> 2025</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content glass-card academic-card">
+                <span class="timeline-year">2023</span>
+                <h3>Secondary School (Class X)</h3>
+                <p><strong>School:</strong> KV OCF</p>
+                <p><strong>Board:</strong> State Board / CBSE</p>
+                <p><strong>Year of Completion:</strong> 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="certifications">
+        <div class="container">
+          <div class="section-heading" data-animate>
+            <span class="eyebrow">Certifications</span>
+            <h2>Professional learning milestones</h2>
+          </div>
+
+          <div class="cert-grid">
+            <div class="cert-card glass-card" data-animate>
+              <i class="fa-solid fa-award"></i>
+              <h3>Microsoft Office Fundamentals</h3>
+              <p>Microsoft</p>
+            </div>
+            <div class="cert-card glass-card" data-animate>
+              <i class="fa-solid fa-chart-line"></i>
+              <h3>NPTEL Certification</h3>
+              <p>NPTEL</p>
+            </div>
+            <div class="cert-card glass-card" data-animate>
+              <i class="fa-brands fa-github"></i>
+              <h3>Programming Fundamentals</h3>
+              <p>C, C++, Java & Python</p>
+            </div>
+            <div class="cert-card glass-card" data-animate>
+              <i class="fa-solid fa-brain"></i>
+              <h3>Prompt Engineering</h3>
+              <p>AI-powered prompt design and usage</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy" data-animate>
+            <span class="eyebrow">Contact</span>
+            <h2>Let’s connect and build something meaningful</h2>
+            <ul class="contact-list">
+              <li><i class="fa-solid fa-envelope"></i> swethabalaji092@gmail.com</li>
+              <li><i class="fa-solid fa-phone"></i> 9444768464</li>
+              <li><i class="fa-brands fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/swetha-balaji-018130376/" target="_blank" rel="noreferrer">linkedin.com/in/swetha-balaji-018130376</a></li>
+              <li><i class="fa-brands fa-github"></i> <a href="https://github.com/swethabalaji092-cpu" target="_blank" rel="noreferrer">github.com/swethabalaji092-cpu</a></li>
+              <li><i class="fa-brands fa-instagram"></i> Add your details here</li>
+            </ul>
+          </div>
+
+          <form class="glass-card contact-form" id="contactForm" novalidate data-animate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" />
+              <small class="error-message"></small>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" />
+              <small class="error-message"></small>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project"></textarea>
+              <small class="error-message"></small>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 Swetha.B. Crafted with passion.</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/swetha-balaji-018130376/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/swethabalaji092-cpu" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
